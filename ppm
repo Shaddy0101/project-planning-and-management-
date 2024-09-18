@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Planning and Management Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project Planning and Management Resources</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact Developer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <section id="courses">
+        <h2>Courses</h2>
+        <div class="course">
+            <h3>Project Design Thinking in Enterprise and Prototyping</h3>
+            <p>Design Thinking is a user-centered approach to solving complex problems and fostering innovation in enterprise environments. Prototyping is a crucial phase within Design Thinking, allowing teams to create tangible solutions for iterative testing and refinement.</p>
+            <ul>
+                <li>Empathy: Understanding user needs and experiences.</li>
+                <li>Ideation: Generating a broad range of ideas.</li>
+                <li>Prototyping: Creating models to explore solutions.</li>
+                <li>Testing: Gathering feedback to refine prototypes.</li>
+                <li>Implementation: Scaling solutions into the enterprise.</li>
+            </ul>
+        </div>
+
+        <div class="course">
+            <h3>Project Design and Planning (BPM210)</h3>
+            <p>This course covers how to initiate, plan, execute, and close projects effectively, including scope, time, cost, and risk management.</p>
+            <ul>
+                <li>Project Lifecycle: Initiation, Planning, Execution, Monitoring, and Closure.</li>
+                <li>Scope Management: Defining and controlling the project scope.</li>
+                <li>Time Management: Developing schedules and timelines.</li>
+                <li>Cost Management: Budgeting and managing project costs.</li>
+                <li>Risk Management: Identifying and responding to risks.</li>
+            </ul>
+        </div>
+
+        <div class="course">
+            <h3>Legal and Ethical Issues in Projects (BPM211)</h3>
+            <p>This course examines the legal frameworks and ethical considerations essential for managing projects, including contracts, compliance, and stakeholder rights.</p>
+            <ul>
+                <li>Contracts and Agreements: Understanding project contracts.</li>
+                <li>Intellectual Property (IP): Protecting creations and designs.</li>
+                <li>Compliance: Adhering to legal regulations.</li>
+                <li>Ethical Decision-Making: Navigating moral dilemmas.</li>
+            </ul>
+        </div>
+
+        <div class="course">
+            <h3>Principles of Marketing for Project Managers (BPM213)</h3>
+            <p>This course integrates marketing principles into project management, focusing on market research, branding, and communication strategies.</p>
+            <ul>
+                <li>Market Research: Understanding market needs.</li>
+                <li>Marketing Mix (4Ps): Product, Price, Place, and Promotion.</li>
+                <li>Target Audience: Identifying and reaching the right customers.</li>
+                <li>Brand Management: Creating a strong brand image.</li>
+            </ul>
+        </div>
+
+        <div class="course">
+            <h3>Creativity and Innovation in Projects (BPM214)</h3>
+            <p>This course explores how creativity and innovation drive success in project management, including brainstorming, disruptive innovation, and change management.</p>
+            <ul>
+                <li>Creativity Techniques: Brainstorming and mind mapping.</li>
+                <li>Innovation Process: From idea generation to implementation.</li>
+                <li>Disruptive Innovation: Creating products that alter markets.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h4>External Resources</h4>
+            <ul>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.youtube.com">YouTube</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact the Developer</h2>
+        <p>Developer: Shadrack Bwire</p>
+        <p>Phone: 0768933227</p>
+        <p>Email: <a href="mailto:shadrackbwire254@gmail.com">shadrackbwire254@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Project Planning and Management Resources. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.course {
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    alert(Thank you, ${name}, for signing up with the email ${email}!);
+});
